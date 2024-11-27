@@ -22,7 +22,7 @@
     <div class="heading">
               Get things Done?
             </div>
-            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket"></i></a>
         <form method="post" >
             {% csrf_token %}
           <input type="text" class="inp" name="title" required placeholder="Add Today's Task">  

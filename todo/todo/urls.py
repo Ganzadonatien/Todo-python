@@ -11,4 +11,5 @@ urlpatterns = [
     path('todopage/', views.todo, name="todo"),
     path('edit_todo/<int:srno>',views.edit_todo,name='edit_todo'),
     path('delete_todo/<int:srno>',views.delete_todo),
+     path('logout', views.logout_view, name='logout'),
 ]

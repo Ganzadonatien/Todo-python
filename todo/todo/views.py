@@ -64,3 +64,7 @@ def delete_todo(request,srno):
     obj=models.TODOO.objects.get(srno=srno)
     obj.delete()
     return redirect('/todopage')
+
+def logout_view(request):
+    logout(request)
+    return redirect('/login')
